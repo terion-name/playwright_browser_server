@@ -6,7 +6,7 @@ try {
 
 const fs = require('fs');
 const { chromium, firefox, webkit } = require('playwright');
-const inDocker = require('is-docker')();
+const inDocker = require('is-docker')() || process.env.KUBERNETES_SERVICE_HOST;
 
 if (inDocker) {
   console.log('Detected docker environment');
