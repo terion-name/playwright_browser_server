@@ -1,0 +1,19 @@
+# Node modules
+node_modules
+
+# Adonis directory for storing tmp files
+tmp
+
+# Environment variables, never commit this file
+.env
+
+# The development sqlite file
+database/*.sqlite
+.idea
+.DS_Store
+dump.rdb
+
+# app files
+running_sessions.lock
+shutdown.lock
+_bak
